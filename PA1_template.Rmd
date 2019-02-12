@@ -12,6 +12,7 @@ Set working directory and library packages
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE, paged.print=FALSE}
 setwd("D:/Coursera")
+Sys.setlocale("LC_TIME", "English")
 library(RColorBrewer)
 library(ggplot2)
 library(knitr)
@@ -28,7 +29,7 @@ listZip<-unzip("./Activity.zip")
 
 Read the data
 
-```{r}
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
 activity<-read.csv("activity.csv")
 ```
 
