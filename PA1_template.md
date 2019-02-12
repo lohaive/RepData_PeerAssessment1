@@ -13,6 +13,14 @@ Set working directory and library packages
 
 ```r
 setwd("D:/Coursera")
+Sys.setlocale("LC_TIME", "English")
+```
+
+```
+## [1] "English_United States.1252"
+```
+
+```r
 library(RColorBrewer)
 library(ggplot2)
 library(knitr)
